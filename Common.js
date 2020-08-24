@@ -128,7 +128,6 @@ InPageEdit.buttons = [{
     close: '</s>',
     text: 'strikethrough'
 }];
-*/
 ////////////////////////////////////////////
 /* 
 Wikiplus
