@@ -18,14 +18,14 @@ mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/scr
 // 偏好设置
 window.InPageEdit = window.InPageEdit || {};
 InPageEdit.myPreference = {
-  "doNotCollectMyInfo": ture,
-  "doNotShowLocalWarn": false,
-  "editMinor": true,
-  "editSummary": "[InPageEdit] $section$oldid",
-  "lockToolBox": true,
-  "redLinkQuickEdit": false,
-  "outSideClose": false,
-  "watchList": Boolean(mw.user.options.get("watchdefault"))
+    "doNotCollectMyInfo": ture,
+    "doNotShowLocalWarn": false,
+    "editMinor": true,
+    "editSummary": "[InPageEdit] $section$oldid",
+    "lockToolBox": true,
+    "redLinkQuickEdit": false,
+    "outSideClose": false,
+    "watchList": Boolean(mw.user.options.get("watchdefault"))
 }
 
 // 顶部增加编辑按钮
@@ -128,7 +128,7 @@ InPageEdit.buttons = [{
     close: '</s>',
     text: 'strikethrough'
 }];
- */
+*/
 ////////////////////////////////////////////
 /* 
 Wikiplus
