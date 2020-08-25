@@ -15,6 +15,7 @@ InPageEdit
 
 mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/script.js');
 
+/* 
 // 偏好设置
 window.InPageEdit = window.InPageEdit || {};
 InPageEdit.myPreference = {
@@ -128,6 +129,7 @@ InPageEdit.buttons = [{
     close: '</s>',
     text: 'strikethrough'
 }];
+ */
 ////////////////////////////////////////////
 /* 
 Wikiplus
