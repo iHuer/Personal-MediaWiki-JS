@@ -15,7 +15,6 @@ InPageEdit
  */
 mw.loader.load('https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/InPageEdit.js');
 
-/* 
 // 偏好设置
 window.InPageEdit = window.InPageEdit || {};
 InPageEdit.myPreference = {
@@ -54,6 +53,7 @@ mw.hook('InPageEdit').add(function(ctx){
   );
 });
 
+/* 
 // 编辑栏自定义按钮
 InPageEdit.buttons = [{
     open: '<!-- ',
