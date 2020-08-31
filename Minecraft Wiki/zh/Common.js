@@ -13,7 +13,7 @@ InPageEdit
 源代码：https://github.com/Dragon-Fish/InPageEdit-v2
  */
 
-mw.loader.load('https://cdn.jsdelivr.net/gh/dragon-fish/inpageedit-v2@master/script.js');
+mw.loader.load('https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/InPageEdit.js');
 
 /* 
 // 偏好设置
