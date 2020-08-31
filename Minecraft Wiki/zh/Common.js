@@ -2,7 +2,7 @@
 /* 
 呼儿的个人JS
 作者：https://minecraft-zh.gamepedia.com/User:呼儿
-授权协议：仅使用未注释的代码。
+授权协议：https://github.com/iHuer/Personal-MediaWiki-JS/blob/master/LICENSE
  */
 ////////////////////////////////////////////
 //<nowiki>
@@ -15,7 +15,6 @@ InPageEdit
 
 mw.loader.load('https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/InPageEdit.js');
 
-/* 
 // 偏好设置
 window.InPageEdit = window.InPageEdit || {};
 InPageEdit.myPreference = {
@@ -30,7 +29,9 @@ InPageEdit.myPreference = {
 }
 
 // 顶部增加编辑按钮
-$(function () {
+$(function (ctx) {
+  var InPageEdit = ctx.InPageEdit,
+    _msg = ctx._msg;
     $('#ca-view').after(
         $('<li>', {
             id: 'ca-quick-edit',
@@ -129,7 +130,6 @@ InPageEdit.buttons = [{
     close: '</s>',
     text: 'strikethrough'
 }];
- */
 ////////////////////////////////////////////
 /* 
 Wikiplus
