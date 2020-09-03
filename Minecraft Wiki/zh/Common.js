@@ -15,6 +15,7 @@ InPageEdit
  */
 mw.loader.load('https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/InPageEdit.js');
 
+/* 
 // 偏好设置
 window.InPageEdit = window.InPageEdit || {};
 InPageEdit.myPreference = {
@@ -27,6 +28,7 @@ InPageEdit.myPreference = {
     "outSideClose": false,
     "watchList": Boolean(mw.user.options.get("watchdefault"))
 }
+ */
 
 // 顶部增加编辑按钮
 mw.hook('InPageEdit').add(function(ctx){
