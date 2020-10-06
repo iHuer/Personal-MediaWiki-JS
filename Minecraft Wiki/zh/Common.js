@@ -11,7 +11,7 @@
 InPageEdit
 作者：https://minecraft-zh.gamepedia.com/User:机智的小鱼君
 信息：https://ipe.netlify.app/
-源代码：https://github.com/Dragon-Fish/InPageEdit-v2
+源代码：https://github.com/Wjghj-Project/InPageEdit
  */
 mw.loader.load('https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/InPageEdit.js');
 
@@ -19,41 +19,17 @@ mw.loader.load('https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/In
 // 偏好设置
 window.InPageEdit = window.InPageEdit || {};
 InPageEdit.myPreference = {
-    "doNotCollectMyInfo": ture,
-    "doNotShowLocalWarn": false,
-    "editMinor": true,
-    "editSummary": "[InPageEdit] $section$oldid",
-    "lockToolBox": true,
-    "redLinkQuickEdit": false,
-    "outSideClose": false,
-    "watchList": Boolean(mw.user.options.get("watchdefault"))
+  "editMinor": true,
+  "editSummary": "[InPageEdit] $section$oldid",
+  "redLinkQuickEdit": false,
+  "outSideClose": false,
+  "watchList": "0",
+  "plugins": [
+    "toolbox.js",
+    "edit-any-page.js",
+    "color-preview.js"
+  ]
 }
- */
-
-// 顶部增加编辑按钮
-mw.hook('InPageEdit').add(function(ctx){
-  var InPageEdit = ctx.InPageEdit,
-    _msg = ctx._msg;
-  $('#ca-view').after(
-    $('<li>',{
-      id:'ca-quick-edit',
-      class:'collapsible'
-    }).append(
-      $('<span>').append(
-        $('<a>',{
-          href: 'javascript:void(0)',
-          text: _msg('quick-edit')
-        })
-        .click(function(){
-          InPageEdit.edit({
-            page: mw.config.get('wgPageName'),
-            revision: mw.config.get('wgRevisionId')
-          });
-        })
-      )
-    )
-  );
-});
 
 /* 
 // 编辑栏自定义按钮
