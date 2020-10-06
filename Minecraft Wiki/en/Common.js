@@ -15,7 +15,6 @@ Source code: https://github.com/Wjghj-Project/InPageEdit
  */
 mw.loader.load('https://cdn.jsdelivr.net/npm/mediawiki-inpageedit@latest/dist/InPageEdit.js');
 
-/* 
 // 偏好设置
 window.InPageEdit = window.InPageEdit || {};
 InPageEdit.myPreference = {
@@ -30,7 +29,7 @@ InPageEdit.myPreference = {
     "color-preview.js"
   ]
 }
-/* 
+
 // 编辑栏自定义按钮
 InPageEdit.buttons = [{
     open: '<!-- ',
@@ -43,7 +42,7 @@ InPageEdit.buttons = [{
     close: '</s>',
     text: 'strikethrough'
 }];
- */
+
 ////////////////////////////////////////////
 /* 
 Wikiplus
