@@ -492,7 +492,7 @@ $(document).ready(function ($) {
                                 $('<a>').attr('href', version.url).html(version.url)
                             ),
                             $('<div>').addClass('list_versions_version_loadinfo').attr(
-                                'data-versionurl', version.url).html('[加载]').click(function () {
+                                'data-versionurl', version.url).html('[载入]').click(function () {
                                 var info_button = $(this);
                                 if (info_button.hasClass(
                                         'list_versions_version_loadinfo_loaded')) return;
@@ -606,7 +606,7 @@ $(document).ready(function ($) {
                                             ).html('加载版本信息失败。')
                                         )
                                     );
-                                    info_button.html('[加载]');
+                                    info_button.html('[载入]');
                                 });
                                 info_button.html('加载中...');
                             })
