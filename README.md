@@ -1,6 +1,6 @@
 # Personal MediaWiki JS
 
-There are some JS code for iHuer's MediaWiki website.
+There are some JS code for MediaWiki websites.
 
 These code are made up of Chinese and English, But all the information is in Chinese.
 
@@ -16,4 +16,4 @@ The document - [README.md](https://github.com/iHuer/Personal-MediaWiki-JS/blob/m
 
 iHuer
 
-August 31, 2020
+February 7, 2021
